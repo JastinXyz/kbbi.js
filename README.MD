@@ -18,11 +18,10 @@ const KBBI = require('kbbi.js')
 ```js
 const KBBI = require('kbbi.js') // import the module
 
-async() => {
-    const result = await KBBI.cari("pohon") // kata kunci = pohon
+KBBI.cari("pohon") // kata kunci = pohon
+ .then(console.log) // respon berupa json dengan definisi pohon (kata kunci yang di cari tadi)
 
-    console.log(result) // respon berupa json dengan definisi pohon (kata kunci yang di cari tadi)
-}
+.catch(console.error) // jika eror, eror text akan ada di console
 ```
 
 # Events
