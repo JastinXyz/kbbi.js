@@ -26,7 +26,7 @@
   "author": "Jastin <jastinlinggar@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "jastinch-api-wrapper": "^0.0.13"
+    "axios": "^0.21.1"
   }
 }
  
