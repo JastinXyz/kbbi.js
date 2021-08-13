@@ -1,4 +1,3 @@
-const JcAPI = require('jastinch-api-wrapper')
 const axios = require('axios')
 const userAgents = require('./tools/user-agents.json')
 const cari = async(keyword) => {
