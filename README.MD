@@ -31,7 +31,14 @@ KBBI.cari("kata kunci disini")
 
 # Contoh Respon JSON
 ```json
-{"lema":"po.hon1 ","arti":["tumbuhan yang berbatang keras dan besar; pokok kayu: -- asam; -- mangga","bagian yang permulaan atau yang dianggap dasar; pangkal","asal mula; pokok sebab: pulang -- selamatan setahun (dua tahun dan sebagainya) sesudah orang meninggal"]}
+{
+  lema: 'po.hon1 ',
+  arti: [
+    'tumbuhan yang berbatang keras dan besar; pokok kayu: -- asam; -- mangga',
+    'bagian yang permulaan atau yang dianggap dasar; pangkal',
+    'asal mula; pokok sebab: pulang -- selamatan setahun (dua tahun dan sebagainya) sesudah orang meninggal'
+  ]
+}
 ```
 #
 
