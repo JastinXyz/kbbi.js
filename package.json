@@ -1,6 +1,6 @@
 {
   "name": "kbbi.js",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "description": "Kamus Besar Bahasa Indonesia",
   "main": "index.js",
   "scripts": {
