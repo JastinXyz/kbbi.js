@@ -29,10 +29,13 @@ KBBI.cari("pohon") // kata kunci = pohon
 KBBI.cari("kata kunci disini") 
 ```
 
+# Contoh Respon JSON
+```json
+{"lema":"po.hon1 ","arti":["tumbuhan yang berbatang keras dan besar; pokok kayu: -- asam; -- mangga","bagian yang permulaan atau yang dianggap dasar; pangkal","asal mula; pokok sebab: pulang -- selamatan setahun (dua tahun dan sebagainya) sesudah orang meninggal"]}
+```
 #
 
 # Links
 - YouTube: https://youtube.com/c/JastinCh
-- My API Documentation: https://apiv2.jastinch.xyz
-- More Useful NPM: https://npmjs.com/package/jastinch-api-wrapper
-- Donate Me: https://apiv2.jastinch.xyz/donate
+- Github: https://github.com/JastinXyz
+- Donate Me: https://api.jastinch.xyz/donate
