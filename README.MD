@@ -40,9 +40,3 @@ KBBI.cari("kata kunci disini")
   ]
 }
 ```
-#
-
-# Links
-- YouTube: https://youtube.com/c/JastinCh
-- Github: https://github.com/JastinXyz
-- Donate Me: https://api.jastinch.xyz/donate
