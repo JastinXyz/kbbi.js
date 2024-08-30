@@ -12,7 +12,7 @@ yarn add kbbi.js
 pnpm add kbbi.js
 ```
 
-# Contoh Penggunaan
+## Contoh Penggunaan
 ```js
 const KBBI = require('kbbi.js')
 KBBI.cari("pohon").then(console.log);
