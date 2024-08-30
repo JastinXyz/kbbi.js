@@ -2,41 +2,41 @@
 
 Kamus Besar Bahasa Indonesia.
 
-# Installation
-You can Install the package from [npmjs](https://npmjs.com/package/kbbi.js).<br>
-Install the module with:
-```cli
-npm i kbbi.js
+## Instalasi
+
+```bash
+npm install kbbi.js
+# atau
+yarn add kbbi.js
+# atau
+pnpm add kbbi.js
 ```
 
-# Import the module
+# Contoh Penggunaan
 ```js
 const KBBI = require('kbbi.js')
+KBBI.cari("pohon").then(console.log);
 ```
 
-# Example Setup
-```js
-const KBBI = require('kbbi.js') // import the module
+## Contoh Respon
 
-KBBI.cari("pohon") // kata kunci = pohon
- .then(console.log) // respon berupa json dengan definisi pohon (kata kunci yang di cari tadi)
+- Jika arti berhasil ditemukan:
+  ```json
+  {
+    "lema": "po.hon1 ",
+    "arti": [
+      "tumbuhan atau tanaman berkayu menahun yang tegak dan tinggi, dengan ukuran dan tinggi tertentu, biasanya memiliki batang, cabang, dan daun yang tumbuh jauh dari permukaan tanah, seperti mangga dan kelapa: -- asam; -- mangga",
+      "bagian yang permulaan atau yang dianggap dasar; pangkal",
+      "asal mula; pokok sebab: pulang -- selamatan setahun (dua tahun dan sebagainya) sesudah orang meninggal",
+      "Anatstruktur anatomis yang cabang-cabangnya menyerupai pohon"
+    ]
+  }
+  ```
 
-.catch(console.error) // jika eror, eror text akan ada di console
-```
-
-# Events
-```js
-KBBI.cari("kata kunci disini") 
-```
-
-# Contoh Respon JSON
-```json
-{
-  "lema": "po.hon1 ",
-  "arti": [
-    "tumbuhan yang berbatang keras dan besar; pokok kayu: -- asam; -- mangga",
-    "bagian yang permulaan atau yang dianggap dasar; pangkal",
-    "asal mula; pokok sebab: pulang -- selamatan setahun (dua tahun dan sebagainya) sesudah orang meninggal"
-  ]
-}
-```
+- Jika tidak ditemukan arti:
+  ```json
+  { 
+    "lema": null,
+    "arti": null
+  }
+  ```
