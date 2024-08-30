@@ -21,4 +21,4 @@ async function cari(keyword) {
     return { lema, arti };
 }
 
-module.exports = cari;
+module.exports = { cari };
