@@ -1,6 +1,6 @@
 {
   "name": "kbbi.js",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "Kamus Besar Bahasa Indonesia",
   "main": "index.js",
   "type": "commonjs",
@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JastinXyz/kbbi.js.git"
+    "url": "git+https://github.com/WilloIzCitron/kbbi.js.git"
   },
   "bugs": {
-    "url": "https://github.com/JastinXyz/kbbi.js/issues"
+    "url": "https://github.com/WilloIzCitron/kbbi.js/issues"
   },
-  "homepage": "https://github.com/JastinXyz/kbbi.js#readme",
+  "homepage": "https://github.com/WilloIzCitron/kbbi.js#readme",
   "keywords": [
     "kbbi",
     "kamus-besar-bahasa-indonesia",
@@ -24,7 +24,7 @@
     "kamus-besar-bahasa-indonesiajs",
     "kamus-besar-bahasa-indonesia-js"
   ],
-  "author": "Jastin <jastinlinggar@gmail.com>",
+  "author": "Jastin <jastinlinggar@gmail.com>, WilloIzCitron",
   "license": "MIT",
   "dependencies": {
     "node-html-parser": "^6.1.13",

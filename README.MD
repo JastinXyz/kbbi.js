@@ -1,8 +1,9 @@
 # kbbi.js
 
-Kamus Besar Bahasa Indonesia.
+Kamus Besar Bahasa Indonesia. NOW IN PUPPETEER!!!
+Selama repo owner yg asli masih belum respon PR gw, gw maintain secara independen. gw masih respect ia untuk membuatkan package ini.
 
-## Instalasi
+## Instalasi/Installation
 
 ```bash
 npm install kbbi.js
@@ -12,13 +13,13 @@ yarn add kbbi.js
 pnpm add kbbi.js
 ```
 
-## Contoh Penggunaan
+## Contoh Penggunaan/Usage
 ```js
 const KBBI = require('kbbi.js')
 KBBI.cari("pohon").then(console.log);
 ```
 
-## Contoh Respon
+## Contoh Respon/Example Response
 
 - Jika arti berhasil ditemukan:
   ```json
@@ -33,7 +34,7 @@ KBBI.cari("pohon").then(console.log);
   }
   ```
 
-- Jika tidak ditemukan arti:
+- Jika tidak ditemukan arti atau ratelimit:
   ```json
   { 
     "lema": null,
