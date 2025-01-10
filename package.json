@@ -3,6 +3,7 @@
   "version": "2.0.2",
   "description": "Kamus Besar Bahasa Indonesia",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "start": "node index.js"
   },
@@ -26,7 +27,7 @@
   "author": "Jastin <jastinlinggar@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.21.1",
-    "node-html-parser": "^6.1.13"
+    "node-html-parser": "^6.1.13",
+    "puppeteer": "^24.0.0"
   }
 }
