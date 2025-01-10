@@ -9,7 +9,6 @@ async function cari(keyword) {
 
     await page.goto(`https://kbbi.kemdikbud.go.id/entri/${keyword}`);
     const res = await page.content()
-    await browser.deleteCookie();
     const root = parse(res);
     const lema = root.querySelector('h2').text;
     let arti = root.querySelectorAll('ol li').map(x => x.text.slice(1).split("  ").join(""));
@@ -24,7 +23,5 @@ async function cari(keyword) {
     await browser.close();
     return { lema, arti};
 }
-
-cari("neraka").then(result => console.log(result));
 
 module.exports = { cari };
