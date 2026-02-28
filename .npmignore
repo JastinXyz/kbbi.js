@@ -1,2 +1,11 @@
+.git
 .gitignore
-pnpm-lock.json
+.npmignore
+.DS_Store
+.vscode
+.github
+node_modules
+test
+test.js
+npm-debug.log
+pnpm-lock.yaml

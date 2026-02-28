@@ -1,6 +1,11 @@
 # kbbi.js
 
-Kamus Besar Bahasa Indonesia.
+Kamus Besar Bahasa Indonesia dengan fallback multi-sumber.
+
+## Fitur
+- Fallback otomatis dari beberapa sumber KBBI
+- Urutan sumber bisa diatur lewat opsi
+- Output konsisten: `{ lema, arti }`
 
 ## Instalasi
 
@@ -14,9 +19,30 @@ pnpm add kbbi.js
 
 ## Contoh Penggunaan
 ```js
-const KBBI = require('kbbi.js')
-KBBI.cari("pohon").then(console.log);
+const { cari } = require('kbbi.js')
+
+cari('pohon').then(console.log);
 ```
+
+## Opsi
+```js
+const { cari } = require('kbbi.js')
+
+cari('pohon', {
+  sources: [
+    'kbbi.kemendikdasmen.go.id',
+    'kbbi.web.id',
+    'typoonline.com',
+    'kbbi.co.id',
+  ],
+}).then(console.log);
+```
+
+## Daftar Sumber
+- `kbbi.kemendikdasmen.go.id`
+- `kbbi.web.id`
+- `typoonline.com`
+- `kbbi.co.id`
 
 ## Contoh Respon
 
@@ -39,3 +65,12 @@ KBBI.cari("pohon").then(console.log);
     "arti": null
   }
   ```
+
+## Catatan
+- Struktur HTML tiap sumber bisa berubah kapan saja.
+- Jika satu sumber gagal, pencarian otomatis lanjut ke sumber berikutnya.
+
+## Test
+```bash
+pnpm test
+```
